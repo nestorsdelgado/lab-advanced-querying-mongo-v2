@@ -16,8 +16,8 @@
     
 <!-- Your Query Goes Here -->
 { number_of_employees : { $gt: 5000 } }
-{number_of_employees:1}
-limit: 20
+Sort: {number_of_employees:-1}
+Limit: 20
 
 <br>
 
@@ -62,8 +62,8 @@ limit: 20
 
 <!-- Your Query Goes Here -->
 {number_of_employees: {$exists:true}}
-{number_of_employees: -1}
-10
+Sort: {number_of_employees: -1}
+Limit: 10
 <br>
 
 **9. All the companies founded on the second semester of the year (July to December). Limit your search to 1000 companies.**
